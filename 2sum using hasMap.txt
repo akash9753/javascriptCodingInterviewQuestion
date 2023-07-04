@@ -1,0 +1,12 @@
+let a = [16,4,23,8,15,42,1,2]
+let target = 19;
+const hasMap = {};
+for(let i = 0; i < a.length; i++){
+  const compliment = target - a[i];
+  if(hasMap[compliment] !== undefined){
+      console.log(hasMap[compliment],i)
+  }else{
+      hasMap[a[i]] = i;
+  }
+}
+console.log(hasMap)
