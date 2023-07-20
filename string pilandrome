@@ -1,0 +1,15 @@
+let a = ""
+console.log(a.length)
+
+function abc(a) {
+  for (let i = 0, j = a.length - 1; i < a.length && j > 0; i++, j--) {
+    if (i < j) {
+      if (a[i] !== a[j]) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  }
+}
+console.log(abc(a));
